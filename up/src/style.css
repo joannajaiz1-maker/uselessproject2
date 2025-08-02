@@ -1,0 +1,105 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 50px;
+  margin: 0;
+  background: linear-gradient(45deg, #ff00cc, #3333ff, #00ffff, #ffcc00);
+  background-size: 400% 400%;
+  animation: rainbow 10s ease infinite;
+  color: #fff;
+}
+
+@keyframes rainbow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px #000;
+}
+
+form {
+  display: inline-block;
+  text-align: left;
+  padding: 20px;
+  border: 2px dashed #fff;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+  width: 340px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 18px;
+  margin-top: 8px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+.scroll-container {
+  margin-top: 5px;
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  white-space: nowrap;
+}
+
+.year-option {
+  padding: 8px 12px;
+  background-color: #eee;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  flex-shrink: 0;
+  color: #000;
+}
+
+.year-option.selected {
+  background-color: #007BFF;
+  color: white;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff4444;
+  color: white;
+  transition: all 0.2s ease;
+  z-index: 1;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+
+#result {
+  font-size: 1.2rem;
+  margin-top: 30px;
+  text-shadow: 1px 1px #000;
+}
